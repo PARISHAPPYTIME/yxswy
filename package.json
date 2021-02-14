@@ -1,0 +1,11 @@
+{
+  "name": "yxswy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:PARISHAPPYTIME/yxswy.git",
+  "author": "烟熏三文鱼 <1678803637@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
