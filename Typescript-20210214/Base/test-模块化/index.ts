@@ -2,11 +2,14 @@ import { getData as get } from './modules/db'
 get()
 
 namespace A{
-    interface Name1{
-        str:string
+    class Dog {
+    
     }
 }
 
-interface Name1{
-    str:string
+namespace B {
+    class Dog {
+    
+    }
+
 }
