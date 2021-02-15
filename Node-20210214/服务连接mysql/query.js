@@ -1,4 +1,4 @@
-const connection = require('../shared/connectMySql.js')
+const connection = require('../shared/connect.js')
 
 /* 'SELECT 1 + 1 AS solution' */
 module.exports = {
