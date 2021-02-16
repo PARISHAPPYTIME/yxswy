@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Object.defineProperty</title>
+  </head>
+  <body>
+    <div id="app">
+      <p>123123</p>
+      <p>{{name}}</p>
+      <p v-text="name"></p>
+      <p>{{doubleAge}}2</p>
+      <input type="text" v-model="name" />
+      <button @click="changeName">呵呵</button>
+      <div v-html="html"></div>
+    </div>
+    <script src="compile.js"></script>
+    <script src="vue.js"></script>
+    <script>
+      const vm = new Vue({
+        el: '#app',
+        data: {
+          name: 'hello world',
+          doubleAge: 1.235,
+          foot: 'foot',
+          bar: {
+            mua: '123'
+          },
+          html: '<h1>123123</h1>'
+        },
+        methods: {
+          changeName() {
+            this.name = 123456
+          }
+        }
+        /* created() {
+          setTimeout(() => {
+            console.log('执行', this)
+            this.name = '1231123'
+          }, 2000)
+        } */
+      })
+      vm.bar.mua = '11111111111111111'
+      vm.foot = 'aqa'
+    </script>
+  </body>
+</html>
