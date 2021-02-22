@@ -1,0 +1,1 @@
+export const Customer2 = <div>213123</div>
