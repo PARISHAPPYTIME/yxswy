@@ -1,0 +1,1 @@
+// https://pagic.org/zh-CN/docs/config.html deno

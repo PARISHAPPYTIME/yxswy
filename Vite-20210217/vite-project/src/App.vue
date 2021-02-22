@@ -1,6 +1,11 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
+  <img
+    alt="Vue logo"
+    src="./assets/logo.png"
+  />
   <HelloWorld msg="Hello Vue 3 + Vite" />
+  <router-link to="/homepage">homepage</router-link>
+  <router-view />
 </template>
 
 <script setup>
