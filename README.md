@@ -47,3 +47,7 @@
 堆栈 实现文件的排列执行 （测试 未完成）
 
 Vue.\$nextTick() （未完成）
+
+# vue3.0
+
+[watchEffect与wacth](https://blog.csdn.net/weixin_45535899/article/details/113338595)
