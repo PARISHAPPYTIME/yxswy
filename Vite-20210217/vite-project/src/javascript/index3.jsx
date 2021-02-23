@@ -1,6 +1,10 @@
+import { getCurrentInstance } from 'vue'
+
 const Child = {
     name: 'Child',
     setup(props, { emit }) {
+        // 获取组件的实例对象
+        console.log('getCurrentInstance', getCurrentInstance())
         emit('change', 1, 5)
         emit('change-page-name', 2, 105)
     },
@@ -14,7 +18,9 @@ const Child = {
 
 export default {
     name: 'Customer3',
-    setup() {},
+    setup(proxy, context) {
+        console.log('proxy, context', proxy, context)
+    },
     render() {
         return (
             <div>
