@@ -2,12 +2,15 @@
   "name": "vite-project",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "cross-env NODE_ENV=development vite",
     "build": "vite build",
     "serve": "vite preview"
   },
   "dependencies": {
     "@vitejs/plugin-vue-jsx": "^1.1.0",
+    "axios": "^0.21.1",
+    "element3": "0.0.39",
+    "mockjs": "^1.1.0",
     "vue": "^3.0.5",
     "vue-router": "4.0",
     "vuex": "4.0"
@@ -15,6 +18,9 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.1.4",
     "@vue/compiler-sfc": "^3.0.5",
-    "vite": "^2.0.0"
+    "cross-env": "^7.0.3",
+    "sass": "^1.32.8",
+    "vite": "^2.0.0",
+    "vite-plugin-mock": "^2.2.4"
   }
 }

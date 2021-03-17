@@ -11,10 +11,10 @@ import { useInjector } from './inter'
 import { User } from './test'
 export default defineComponent({
   setup() {
-  const { person, setPerson } = useInjector(User)
+    const { person, setPerson } = useInjector(User)
     return {
       person,
-       setPerson
+      setPerson
     }
   }
 })
