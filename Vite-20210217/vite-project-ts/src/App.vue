@@ -13,6 +13,10 @@ import { defineComponent, onMounted } from "vue";
 import HelloWorld from "./components/HelloWorld.vue";
 import ComponentA from "./components/componentA.vue";
 
+interface Student {
+  name: string
+}
+
 export default defineComponent({
   name: "App",
   components: {
