@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    /*广度优先遍历*/
+    <div id="app">
+        <div class="c1-1">
+            <div class="c1-2"></div>
+            <div class="c1-3"></div>
+            <div class="c1-4"></div>
+            <div class="c1-5"></div>
+        </div>
+        <div class="c2-1"></div>
+        <div class="c3-1"></div>
+        <div class="c4-1"></div>
+        <div class="c5-1">
+            <div class="c5-2"></div>
+            <div class="c5-3"></div>
+            <div class="c5-4"></div>
+            <div class="c5-5"></div>
+        </div>
+        <div class="c6-1"></div>
+    </div>
+    <script>
+        /*广度优先遍历*/
+        let widthTraversal2 = (node) => {
+            let nodes = []
+            let stack = []
+            if (node) {
+                stack.push(node)
+                while (stack.length) {
+                    let item = stack.shift()
+                    let children = item.children
+                    nodes.push(item)
+                    // 队列，先进先出
+                    // nodes = [] stack = [parent]
+                    // nodes = [parent] stack = [child1,child2,child3]
+                    // nodes = [parent, child1] stack = [child2,child3,child1-1,child1-2]
+                    // nodes = [parent,child1,child2]
+                    for (let i = 0; i < children.length; i++) {
+                        stack.push(children[i])
+                    }
+                    console.log(stack)
+                }
+            }
+            return nodes
+        }
+        console.log(widthTraversal2(document.querySelector('#app')))
+    </script>
+</body>
+</html>
