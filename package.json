@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "deploy-gh": "yarn docs:build && sh scripts/deploy-gh.sh"
   },
   "dependencies": {
     "axios": "^0.21.1",
