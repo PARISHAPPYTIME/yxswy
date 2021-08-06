@@ -27,7 +27,7 @@ const init = () => {
             state.info = res || {}
         })
 }
-
+console.log(1)
 onMounted(init)
 </script>
 
