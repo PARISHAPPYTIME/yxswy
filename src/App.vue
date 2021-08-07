@@ -69,14 +69,16 @@ html,
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 main {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
     transition: all 0.35s;
 }
 
