@@ -77,7 +77,7 @@ main {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-top: 13%;
     position: fixed;
     transition: all 0.35s;
 }
