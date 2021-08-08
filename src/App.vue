@@ -80,6 +80,8 @@ main {
     padding-top: 13%;
     position: fixed;
     transition: all 0.35s;
+    padding: 25px;
+    box-sizing: border-box;
 }
 
 main.dark {
