@@ -39,7 +39,7 @@ const theme = ref('')
 
 const diffTime = () => {
     const nowDate = dayjs()
-    if (nowDate.isAfter(startDate) && startDate.isBefore(endDate)) {
+    if (nowDate.isAfter(startDate) && nowDate.isBefore(endDate)) {
         theme.value = 'light'
     } else {
         theme.value = 'dark'
@@ -77,10 +77,10 @@ main {
     height: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 13%;
     position: fixed;
     transition: all 0.35s;
     padding: 25px;
+    padding-top: 13%;
     box-sizing: border-box;
 }
 
