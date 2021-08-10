@@ -1,13 +1,22 @@
 {
-  "name": "yxswy",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:PARISHAPPYTIME/yxswy.git",
-  "author": "烟熏三文鱼 <1678803637@qq.com>",
-  "license": "MIT",
+  "name": "vite-project",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview",
+    "deploy-gh": "yarn docs:build && sh scripts/deploy-gh.sh"
+  },
   "dependencies": {
-    "esbuild": "^0.12.17",
-    "express": "^4.17.1",
-    "nodemailer": "^6.4.18"
+    "axios": "^0.21.1",
+    "dayjs": "^1.10.6",
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.3.0",
+    "@vue/compiler-sfc": "^3.0.5",
+    "typescript": "^4.3.2",
+    "vite": "^2.4.4",
+    "vue-tsc": "^0.2.2"
   }
 }

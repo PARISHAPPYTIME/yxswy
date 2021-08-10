@@ -1,0 +1,19 @@
+{
+  "name": "20210808",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc --watch & export NODE_ENV=development && node bin/dev.js -t dist/ -e dist/app.js",
+    "build": "rm -rf dist/* && tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa-bodyparser": "^4.3.3",
+    "@types/koa-router": "^7.4.4",
+    "@types/koa2-cors": "^2.0.2"
+  }
+}

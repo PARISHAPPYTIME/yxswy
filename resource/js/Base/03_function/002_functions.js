@@ -7,9 +7,11 @@ function functions(object) {
 
 // export default functions
 // test --
-// function Foo() {
-//     this.a = () => 'a'
-//     this.b = () => 'b'
-// }
-// Foo.prototype.c = () => 'c'
-// console.log(functions(new Foo))
+function Foo() {
+    this.a = () => 'a'
+    this.b = () => 'b'
+    this.c = 123
+    this.v = 0
+}
+Foo.prototype.c = () => 'c'
+console.log(functions(new Foo))
