@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "esbuild main.ts --bundle --outfile=main.js --watch",
-    "build:prod": "esbuild app.jsx --bundle --outfile=out.js --minify"
+    "dev": "node index.js"
   },
   "keywords": [],
   "author": "",
