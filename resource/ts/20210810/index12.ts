@@ -37,9 +37,24 @@ namespace other16 {
 
     const c4: typeof MyAbstractClass = MyAbstractClass
 
-    class People2 {
-        name: number;
-        age: number;
-        constructor() {}
-    }
+    // class People2 {
+    //     static num123: number
+    //     age: number
+    //     constructor() {}
+    //     static run() {}
+    // }
+
+    // const p1: People2 = new People2()
+    // p1.age
+    // p1.run
+
+    // const p2: People2 = People2
+    // p2.run
+
+    // const p3: typeof People2 = new People2()
+    // p3.num123
+    // p3.run
+
+    // const p4: typeof People2 = People2()
+    // p4.num123
 }
