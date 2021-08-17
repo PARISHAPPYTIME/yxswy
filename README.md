@@ -1,5 +1,7 @@
 # yxswy
 
+- [初学者也能看懂的 Vue3 源码中那些实用的基础工具函数](https://juejin.cn/post/6994976281053888519?utm_source=gold_browser_extension#heading-15)
+
 - [我给网站做了一场性能手术](https://juejin.cn/post/6959333330277892133)
 
 - [廖雪峰-Git教程](https://www.liaoxuefeng.com/wiki/896043488029600)
@@ -20,8 +22,6 @@
 - [Babel 那些事儿](https://juejin.cn/post/6985540486823936031)
 
         放在最后的案例是可以执行成功的，但是有 单双引号 的问题，所以作者使用屏幕快照生成打印查看效果。
-
-- [廖雪峰 Git 教程](https://www.liaoxuefeng.com/wiki/896043488029600)
 
 - [vue-cli3 中不能使用 hasOwnProperty 的解决办法](https://blog.csdn.net/xiao1215fei/article/details/105409145)
 
@@ -82,3 +82,12 @@
 - [将代码解析成抽象语法树 @babel/parser ](https://astexplorer.net/)
 
 - [Ts高手篇：22个示例深入讲解Ts最晦涩难懂的高级类型工具](https://juejin.cn/post/6994102811218673700?utm_source=gold_browser_extension)
+
+- [stackblitz 在线开发](https://stackblitz.com/edit/nuxt-starter-rh5jcg?file=pages%2Findex.vue)
+
+- [github 在线开发](https://github.dev/PARISHAPPYTIME/VitePress)
+        github.com => github.dev
+
+### 其他认知
+
+- [网易将军令](https://www.cnblogs.com/vanishfan/p/4377260.html)
