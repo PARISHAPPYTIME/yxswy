@@ -80,3 +80,5 @@
 - [在线转化 vue3 代码为 render](https://vue-next-template-explorer.netlify.app/#%7B%22src%22%3A%22%20%20%3Ch1%3E%E5%A4%A7%E5%AE%B6%E5%A5%BD%20kkb%E6%AC%A2%E8%BF%8E%E4%BD%A0%3C%2Fh1%3E%5Cn%22%2C%22ssr%22%3Afalse%2C%22options%22%3A%7B%22mode%22%3A%22module%22%2C%22filename%22%3A%22Foo.vue%22%2C%22prefixIdentifiers%22%3Afalse%2C%22hoistStatic%22%3Atrue%2C%22cacheHandlers%22%3Atrue%2C%22scopeId%22%3Anull%2C%22inline%22%3Afalse%2C%22ssrCssVars%22%3A%22%7B%20color%20%7D%22%2C%22compatConfig%22%3A%7B%22MODE%22%3A3%7D%2C%22whitespace%22%3A%22condense%22%2C%22bindingMetadata%22%3A%7B%22TestComponent%22%3A%22setup-const%22%2C%22setupRef%22%3A%22setup-ref%22%2C%22setupConst%22%3A%22setup-const%22%2C%22setupLet%22%3A%22setup-let%22%2C%22setupMaybeRef%22%3A%22setup-maybe-ref%22%2C%22setupProp%22%3A%22props%22%2C%22vMySetupDir%22%3A%22setup-const%22%7D%2C%22optimizeImports%22%3Afalse%2C%22optimizeBindings%22%3Afalse%7D%7D)
 
 - [将代码解析成抽象语法树 @babel/parser ](https://astexplorer.net/)
+
+- [Ts高手篇：22个示例深入讲解Ts最晦涩难懂的高级类型工具](https://juejin.cn/post/6994102811218673700?utm_source=gold_browser_extension)
