@@ -87,6 +87,8 @@
 
 - [github 在线开发](https://github.dev/PARISHAPPYTIME/VitePress)
         github.com => github.dev
+        
+- [vite 追加 decorators](https://www.bilibili.com/read/cv11559191/)
 
 ### 其他认知
 
