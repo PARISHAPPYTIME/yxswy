@@ -11,6 +11,7 @@ app.get('/', (req, res) => {
 app.use(express.static(path.resolve(__dirname, 'public')))
 
 app.get('/dl', (req, res) => {
+    // 使用 res.download() 可以控制文件是下载的而不是新窗口打开的
     res.download(path.resolve(__dirname, 'public/index2.html'))
 })
 
