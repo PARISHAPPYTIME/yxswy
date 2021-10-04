@@ -1,5 +1,17 @@
 # yxswy
 
+#### 待尝试
+
+[那些你应该说再见的 npm 祖传老库](https://zhuanlan.zhihu.com/p/415361629)
+
+手写一个 promise
+
+我觉得应该手写一个 todolist 用来替代这个 markdown
+
+vuex 的争论 https://www.zhihu.com/question/478752529/answer/2054017021
+
+#### 学习
+
 - [初学者也能看懂的 Vue3 源码中那些实用的基础工具函数](https://juejin.cn/post/6994976281053888519?utm_source=gold_browser_extension#heading-15)
 
 - [我给网站做了一场性能手术](https://juejin.cn/post/6959333330277892133)
@@ -87,7 +99,7 @@
 
 - [github 在线开发](https://github.dev/PARISHAPPYTIME/VitePress)
         github.com => github.dev
-        
+    
 - [vite 追加 decorators](https://www.bilibili.com/read/cv11559191/)
 
 ### 其他认知
