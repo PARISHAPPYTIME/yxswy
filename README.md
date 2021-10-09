@@ -16,12 +16,11 @@ vuex 的争论 https://www.zhihu.com/question/478752529/answer/2054017021
 
 - [我给网站做了一场性能手术](https://juejin.cn/post/6959333330277892133)
 
-- [廖雪峰-Git教程](https://www.liaoxuefeng.com/wiki/896043488029600)
+- [廖雪峰-Git 教程](https://www.liaoxuefeng.com/wiki/896043488029600)
 
-- [25个 Vue 技巧，开发了5年了，有些竟然还是第一次见！](https://zhuanlan.zhihu.com/p/393456120)
+- [25 个 Vue 技巧，开发了 5 年了，有些竟然还是第一次见！](https://zhuanlan.zhihu.com/p/393456120)
 
 - [死磕 36 个 JS 手写题（搞懂后，提升真的大）](https://juejin.cn/post/6946022649768181774#heading-0)
-
 
 - [使用 cypress 来做前端自动化测试 - 体验由外到内的 TDD 开发姿势](https://www.bilibili.com/video/BV1WU4y1J7Va?share_medium=android&share_plat=android&share_session_id=2e6ff244-7158-4d4c-acc7-027273eb943d&share_source=WEIXIN&share_tag=s_i&timestamp=1628066274&unique_k=NkB9h3)
 
@@ -93,16 +92,18 @@ vuex 的争论 https://www.zhihu.com/question/478752529/answer/2054017021
 
 - [将代码解析成抽象语法树 @babel/parser ](https://astexplorer.net/)
 
-- [Ts高手篇：22个示例深入讲解Ts最晦涩难懂的高级类型工具](https://juejin.cn/post/6994102811218673700?utm_source=gold_browser_extension)
+- [Ts 高手篇：22 个示例深入讲解 Ts 最晦涩难懂的高级类型工具](https://juejin.cn/post/6994102811218673700?utm_source=gold_browser_extension)
 
 - [stackblitz 在线开发](https://stackblitz.com/edit/nuxt-starter-rh5jcg?file=pages%2Findex.vue)
 
 - [github 在线开发](https://github.dev/PARISHAPPYTIME/VitePress)
-        github.com => github.dev
-    
+  github.com => github.dev
 - [vite 追加 decorators](https://www.bilibili.com/read/cv11559191/)
 
 ### 其他认知
 
 - [网易将军令](https://www.cnblogs.com/vanishfan/p/4377260.html)
+
 - [开发自己的脚手架(Rollup+Typescript)-(03)-(CAC 命令行交互)](https://blog.csdn.net/qq_32930863/article/details/108612122www)
+
+- [博客搭建（一般）](https://pagic.org/zh-CN/docs/config.html)
