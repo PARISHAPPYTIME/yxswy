@@ -78,3 +78,7 @@ export const valueEquals = (a, b) => {
     return true;
 };
 
+//* 输入框非空的判断
+export function isRealValue(value) {
+    return value ?? '' !== ''
+}
