@@ -1,5 +1,11 @@
 # yxswy
 
+## 备注
+
+1. `promise` 并发时考虑 `Promise.all()`, 其他时候考虑 `async` `await`; 如果并发请求时，只要其中一个异步函数处理完成，就返回结果，要用到 `Promise.race()`
+
+---
+
 #### 待尝试
 
 [那些你应该说再见的 npm 祖传老库](https://zhuanlan.zhihu.com/p/415361629)
@@ -107,3 +113,7 @@ vuex 的争论 https://www.zhihu.com/question/478752529/answer/2054017021
 - [开发自己的脚手架(Rollup+Typescript)-(03)-(CAC 命令行交互)](https://blog.csdn.net/qq_32930863/article/details/108612122www)
 
 - [博客搭建（一般）](https://pagic.org/zh-CN/docs/config.html)
+
+## ES6
+
+[你会用 ES6，那倒是用啊！](https://juejin.cn/post/7016520448204603423)
