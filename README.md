@@ -25,6 +25,7 @@ vuex 的争论 https://www.zhihu.com/question/478752529/answer/2054017021
 - [廖雪峰-Git 教程](https://www.liaoxuefeng.com/wiki/896043488029600)
 
 [X] [25 个 Vue 技巧，开发了 5 年了，有些竟然还是第一次见！](https://zhuanlan.zhihu.com/p/393456120)
+
 [X] [你会用 ES6，那倒是用啊！](https://juejin.cn/post/7016520448204603423)
 
 - [死磕 36 个 JS 手写题（搞懂后，提升真的大）](https://juejin.cn/post/6946022649768181774#heading-0)
