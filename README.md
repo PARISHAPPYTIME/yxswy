@@ -114,10 +114,14 @@ vuex 的争论 https://www.zhihu.com/question/478752529/answer/2054017021
 
 ---
 
-- [x] [网站性能优化实战——从 12.67s 到 1.06s 的故事](https://juejin.cn/post/6844903655330562062)
+- [ ] [网站性能优化实战——从 12.67s 到 1.06s 的故事](https://juejin.cn/post/6844903655330562062)
 
 - [x] [25 个 Vue 技巧，开发了 5 年了，有些竟然还是第一次见！](https://zhuanlan.zhihu.com/p/393456120)
 
 - [x] [你会用 ES6，那倒是用啊！](https://juejin.cn/post/7016520448204603423)
 
 - [x] [TypeScript，初次见面，请多指教](https://zhuanlan.zhihu.com/p/57958328)
+
+- [x] [JavaScript 复杂判断的更优雅写法](https://juejin.cn/post/6844903705058213896)
+
+- [x] [你是否真正自己手写过一个promise？](https://zhuanlan.zhihu.com/p/269124928)
