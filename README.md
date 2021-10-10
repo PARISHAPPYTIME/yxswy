@@ -24,10 +24,6 @@ vuex 的争论 https://www.zhihu.com/question/478752529/answer/2054017021
 
 - [廖雪峰-Git 教程](https://www.liaoxuefeng.com/wiki/896043488029600)
 
-- [X] [25 个 Vue 技巧，开发了 5 年了，有些竟然还是第一次见！](https://zhuanlan.zhihu.com/p/393456120)
-
-- [X] [你会用 ES6，那倒是用啊！](https://juejin.cn/post/7016520448204603423)
-
 - [死磕 36 个 JS 手写题（搞懂后，提升真的大）](https://juejin.cn/post/6946022649768181774#heading-0)
 
 - [使用 cypress 来做前端自动化测试 - 体验由外到内的 TDD 开发姿势](https://www.bilibili.com/video/BV1WU4y1J7Va?share_medium=android&share_plat=android&share_session_id=2e6ff244-7158-4d4c-acc7-027273eb943d&share_source=WEIXIN&share_tag=s_i&timestamp=1628066274&unique_k=NkB9h3)
@@ -116,6 +112,12 @@ vuex 的争论 https://www.zhihu.com/question/478752529/answer/2054017021
 
 - [博客搭建（一般）](https://pagic.org/zh-CN/docs/config.html)
 
-## ES6
+---
 
-[你会用 ES6，那倒是用啊！](https://juejin.cn/post/7016520448204603423)
+- [x] [网站性能优化实战——从 12.67s 到 1.06s 的故事](https://juejin.cn/post/6844903655330562062)
+
+- [x] [25 个 Vue 技巧，开发了 5 年了，有些竟然还是第一次见！](https://zhuanlan.zhihu.com/p/393456120)
+
+- [x] [你会用 ES6，那倒是用啊！](https://juejin.cn/post/7016520448204603423)
+
+- [x] [TypeScript，初次见面，请多指教](https://zhuanlan.zhihu.com/p/57958328)
