@@ -1,0 +1,14 @@
+{
+  "name": "emial",
+  "version": "1.0.0",
+  "description": "需要自己手动设置自己邮箱的参数(Success)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^6.6.5"
+  }
+}
