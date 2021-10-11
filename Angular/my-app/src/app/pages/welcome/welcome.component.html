@@ -1,4 +1,20 @@
-<nz-descriptions nzTitle="Welcome" nzBordered>
+<div contenteditable="true" class="edit-box"></div>
+<br />
+<button
+  nz-button
+  nzType="primary"
+  (click)="loadOne()"
+  [nzLoading]="isLoadingOne"
+>
+  Primary Button
+</button>
+<br />
+<br />
+<!-- <nz-timeline [nzPending]="'Recording...'" [nzReverse]="reverse">
+  <nz-timeline-item *ngFor="let item of messages">{{ item }}</nz-timeline-item>
+</nz-timeline> -->
+
+<!-- <nz-descriptions nzTitle="Welcome" nzBordered>
   <nz-descriptions-item nzTitle="Product">Cloud Database</nz-descriptions-item>
   <nz-descriptions-item nzTitle="Billing Mode" [nzSpan]="2"
     >Prepaid</nz-descriptions-item
@@ -25,4 +41,4 @@
   <nz-descriptions-item nzTitle="Config Info" [nzSpan]="2">
     我想这都不是我们想象种的那般美好的世界
   </nz-descriptions-item>
-</nz-descriptions>
+</nz-descriptions> -->

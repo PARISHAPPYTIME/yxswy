@@ -14,6 +14,8 @@ import { IconsProviderModule } from './icons-provider.module';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 
+import { HttpService } from '../utils/http.service'
+
 registerLocaleData(zh);
 
 @NgModule({
@@ -30,7 +32,7 @@ registerLocaleData(zh);
     NzLayoutModule,
     NzMenuModule
   ],
-  providers: [{ provide: NZ_I18N, useValue: zh_CN }],
+  providers: [{ provide: NZ_I18N, useValue: zh_CN }, HttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
 
+  reverse = false;
+  isLoadingOne = false;
+  messages: any[] = [];
+
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  loadOne(): void {
+    this.isLoadingOne = true;
+    setTimeout(() => {
+      this.isLoadingOne = false;
+    }, 5000);
   }
 
 }
