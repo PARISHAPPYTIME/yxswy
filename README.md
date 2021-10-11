@@ -1,7 +1,5 @@
 # yxswy
 
-## 备注
-
 1. `promise` 并发时考虑 `Promise.all()`, 其他时候考虑 `async` `await`; 如果并发请求时，只要其中一个异步函数处理完成，就返回结果，要用到 `Promise.race()`
 
 ---
@@ -58,7 +56,7 @@ vuex 的争论 https://www.zhihu.com/question/478752529/answer/2054017021
 
 - [vue typescript mixins 混入](https://www.jianshu.com/p/836385e3d82a)
 
-### 前端思考
+#### 前端思考
 
 - [前端进阶（十九）如何写出优质代码](https://blog.csdn.net/u014744118/article/details/89293047)
 
@@ -72,7 +70,7 @@ vuex 的争论 https://www.zhihu.com/question/478752529/answer/2054017021
 
 - [【Vue 进阶】手把手教你在 Vue 中使用 JSX](https://juejin.cn/post/6870480188086419470)
 
-### 待看
+#### 待看
 
 - [Rxjs 知识整理](https://www.jianshu.com/p/16be96d69143)
 
@@ -84,13 +82,13 @@ vuex 的争论 https://www.zhihu.com/question/478752529/answer/2054017021
 
 - Vue.\$nextTick() （未完成）
 
-### vue3.0
+#### vue3.0
 
 - [watchEffect 与 wacth](https://blog.csdn.net/weixin_45535899/article/details/113338595)
 
 - [12 个 GitHub 上超火的 JavaScript 奇技淫巧项目，找到写 JavaScript 的灵感！](https://juejin.cn/post/6906126184031977480)
 
-### 工具
+#### 工具
 
 - [在线转化 vue3 代码为 render](https://vue-next-template-explorer.netlify.app/#%7B%22src%22%3A%22%20%20%3Ch1%3E%E5%A4%A7%E5%AE%B6%E5%A5%BD%20kkb%E6%AC%A2%E8%BF%8E%E4%BD%A0%3C%2Fh1%3E%5Cn%22%2C%22ssr%22%3Afalse%2C%22options%22%3A%7B%22mode%22%3A%22module%22%2C%22filename%22%3A%22Foo.vue%22%2C%22prefixIdentifiers%22%3Afalse%2C%22hoistStatic%22%3Atrue%2C%22cacheHandlers%22%3Atrue%2C%22scopeId%22%3Anull%2C%22inline%22%3Afalse%2C%22ssrCssVars%22%3A%22%7B%20color%20%7D%22%2C%22compatConfig%22%3A%7B%22MODE%22%3A3%7D%2C%22whitespace%22%3A%22condense%22%2C%22bindingMetadata%22%3A%7B%22TestComponent%22%3A%22setup-const%22%2C%22setupRef%22%3A%22setup-ref%22%2C%22setupConst%22%3A%22setup-const%22%2C%22setupLet%22%3A%22setup-let%22%2C%22setupMaybeRef%22%3A%22setup-maybe-ref%22%2C%22setupProp%22%3A%22props%22%2C%22vMySetupDir%22%3A%22setup-const%22%7D%2C%22optimizeImports%22%3Afalse%2C%22optimizeBindings%22%3Afalse%7D%7D)
 
@@ -104,7 +102,7 @@ vuex 的争论 https://www.zhihu.com/question/478752529/answer/2054017021
   github.com => github.dev
 - [vite 追加 decorators](https://www.bilibili.com/read/cv11559191/)
 
-### 其他认知
+#### 其他认知
 
 - [网易将军令](https://www.cnblogs.com/vanishfan/p/4377260.html)
 
@@ -124,4 +122,8 @@ vuex 的争论 https://www.zhihu.com/question/478752529/answer/2054017021
 
 - [x] [JavaScript 复杂判断的更优雅写法](https://juejin.cn/post/6844903705058213896)
 
-- [x] [你是否真正自己手写过一个promise？](https://zhuanlan.zhihu.com/p/269124928)
+- [x] [你是否真正自己手写过一个 promise？](https://zhuanlan.zhihu.com/p/269124928)
+
+- [x] [你可能不熟悉的 JS 总结](https://segmentfault.com/a/1190000018113011)
+
+- [x] [[译]发现 JavaScript 中闭包的强大威力](https://juejin.cn/post/6844903769646317576)
