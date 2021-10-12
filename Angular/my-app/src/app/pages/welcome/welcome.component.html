@@ -1,10 +1,15 @@
-<div contenteditable="true" class="edit-box"></div>
+<div
+  contenteditable="true"
+  class="edit-box"
+  [innerHTML]="content"
+  (input)="editInput($event)"
+></div>
 <br />
 <button
   nz-button
   nzType="primary"
-  (click)="loadOne()"
-  [nzLoading]="isLoadingOne"
+  (click)="saveContent()"
+  [nzLoading]="loading"
 >
   Primary Button
 </button>

@@ -35,7 +35,7 @@ B.prototype.getAge = function () {
     return this.age
 }
 
-// let tom = new A('tom')
+let tom = new A('tom')
 let tom2 = Reflect.construct(A, ['tom'])
 console.log(tom2)
 let tom3 = Reflect.construct(A, ['tom'], B)

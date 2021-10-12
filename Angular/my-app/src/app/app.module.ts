@@ -13,8 +13,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IconsProviderModule } from './icons-provider.module';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { NzModalModule } from 'ng-zorro-antd/modal'
+import { NzFormModule } from 'ng-zorro-antd/form'
+import { NzSelectModule } from 'ng-zorro-antd/select'
+import { NzInputModule } from 'ng-zorro-antd/input'
 
 import { HttpService } from '../utils/http.service'
+import { TokenService } from '../utils/token.service';
 
 registerLocaleData(zh);
 
@@ -30,9 +35,16 @@ registerLocaleData(zh);
     BrowserAnimationsModule,
     IconsProviderModule,
     NzLayoutModule,
-    NzMenuModule
+    NzMenuModule,
+    NzModalModule,
+    NzFormModule,
+    NzSelectModule,
+    NzInputModule
   ],
-  providers: [{ provide: NZ_I18N, useValue: zh_CN }, HttpService],
+  providers: [
+    { provide: NZ_I18N, useValue: zh_CN },
+    HttpService, TokenService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
