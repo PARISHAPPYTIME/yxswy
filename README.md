@@ -121,3 +121,7 @@ vuex 的争论 https://www.zhihu.com/question/478752529/answer/2054017021
 - [x] [死磕 36 个 JS 手写题（搞懂后，提升真的大）](https://juejin.cn/post/6946022649768181774#heading-0)
 
 - [x] [初学者也能看懂的 Vue3 源码中那些实用的基础工具函数](https://juejin.cn/post/6994976281053888519?utm_source=gold_browser_extension#heading-15)
+
+- [] [抛弃 Vue 转入 React 的六个月，我收获了什么？](https://juejin.cn/post/7018328359742636039)
+
+- [] [近 20 人爆肝数周，写给初中级前端的万字高级进阶指南](https://juejin.cn/post/7017645909483716615#heading-31)

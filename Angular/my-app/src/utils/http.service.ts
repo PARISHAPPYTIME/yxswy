@@ -1,16 +1,17 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
+import { TokenService } from './token.service';
 
-const token =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Inl4c3d5Iiwic3ViIjo2LCJyZWFsTmFtZSI6IueDn-eGj-S4ieaWh-mxvCIsInJvbGUiOjMsImlhdCI6MTYzNDAxNjc4MiwiZXhwIjoxNjM0MDQ1NTgyfQ.SR9hTqcCJ_oqgv-8jCbCyKXtE9ELR7sv6C7rZg5rNVc';
-const commonHeaders = { Authorization: 'Bearer ' + token };
+// const token =
+//   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Inl4c3d5Iiwic3ViIjo2LCJyZWFsTmFtZSI6IueDn-eGj-S4ieaWh-mxvCIsInJvbGUiOjMsImlhdCI6MTYzNDAxNjc4MiwiZXhwIjoxNjM0MDQ1NTgyfQ.SR9hTqcCJ_oqgv-8jCbCyKXtE9ELR7sv6C7rZg5rNVc';
+// const commonHeaders = { Authorization: 'Bearer ' + token };
 
 @Injectable()
 export class HttpService {
   public restServer;
   public http;
 
-  constructor(Http: HttpClient) {
+  constructor(Http: HttpClient, private token: TokenService) {
     this.http = Http;
     this.restServer = 'http://localhost:3010';
   }
@@ -38,18 +39,18 @@ export class HttpService {
     vm.http
       .get(vm._url(url), {
         params: httpParams,
-        headers: { ...headerOptions, ...commonHeaders },
+        headers: { ...headerOptions, ...{ Authorization: 'Bearer ' + this.token.getToken() } },
       })
       .subscribe((data) => {
-        // console.log('get请求结束', data);
         cb?.(data);
       });
   }
 
   public post(url: string, data?: Record<string, any>, options?: Object) {
-    console.log(url, data, options);
+
     return new Promise((resolve, reject) => {
       this.http.post(this._url(url), data, options).subscribe((res) => {
+        console.log(res)
         resolve(res);
       });
     });

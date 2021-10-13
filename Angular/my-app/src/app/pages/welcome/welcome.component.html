@@ -5,14 +5,26 @@
   (input)="editInput($event)"
 ></div>
 <br />
-<button
-  nz-button
-  nzType="primary"
-  (click)="saveContent()"
-  [nzLoading]="loading"
->
-  Primary Button
-</button>
+<nz-space>
+  <button
+    *nzSpaceItem
+    nz-button
+    nzType="primary"
+    (click)="saveContent()"
+    [nzLoading]="loading"
+  >
+    Synchronization of content
+  </button>
+  <button
+    *nzSpaceItem
+    nz-button
+    nzType="primary"
+    (click)="saveContent()"
+    [nzLoading]="loading"
+  >
+    File upload
+  </button>
+</nz-space>
 <br />
 <br />
 <!-- <nz-timeline [nzPending]="'Recording...'" [nzReverse]="reverse">

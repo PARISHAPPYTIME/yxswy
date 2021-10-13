@@ -36,20 +36,15 @@ export class AppComponent {
     }
 
     this.validateForm = this.fb.group({
-      // email: [null, [Validators.email, Validators.required]],
-      // password: [null, [Validators.required]],
-      // checkPassword: [null, [Validators.required, this.confirmationValidator]],
-      // nickname: [null, [Validators.required]],
       phoneNumberPrefix: ['+86'],
-      phoneNumber: [null, [Validators.required]],
-      // website: [null, [Validators.required]],
-      captcha: [null, [Validators.required]],
-      agree: [false]
+      username: ['yxswy', [Validators.required]],
+      password: ['123456', [Validators.required]],
+      agree: [true]
     });
 
-    // this.http.get('https://v1.hitokoto.cn/', {}, (data: any) => {
-    //   this.hitokoto = data.hitokoto
-    // });
+    this.http.get('https://v1.hitokoto.cn/', {}, (data: any) => {
+      this.hitokoto = data.hitokoto + " / " + data.from
+    });
   }
 
   confirmationValidator = (control: FormControl): { [s: string]: boolean } => {
@@ -61,29 +56,24 @@ export class AppComponent {
     return {};
   };
 
-  getCaptcha(e: MouseEvent): void {
-    e.preventDefault();
-  }
-
-  submitForm(): void {
+  submitForm(value: { username: string; password: string; }): void {
     for (const i in this.validateForm.controls) {
       if (this.validateForm.controls.hasOwnProperty(i)) {
         this.validateForm.controls[i].markAsDirty();
         this.validateForm.controls[i].updateValueAndValidity();
       }
     }
+    if (value.username && value.password) {
+      this.http.post('/user/login', value).then((res: any) => {
+          const token = res.data.token
+          this.token.setToken(token)
+          console.log(res)
+          this.isVisibleMiddle = false
+      });
+    }
   }
 
   showModalMiddle(): void {
     this.isVisibleMiddle = true;
-  }
-
-  handleOkMiddle(): void {
-    console.log('click ok');
-    this.isVisibleMiddle = false;
-  }
-
-  handleCancelMiddle(): void {
-    this.isVisibleMiddle = false;
   }
 }

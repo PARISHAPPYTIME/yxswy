@@ -64,10 +64,14 @@
   nzCentered
 >
   <ng-container *nzModalContent>
-    <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+    <form
+      nz-form
+      [formGroup]="validateForm"
+      (ngSubmit)="submitForm(validateForm.value)"
+    >
       <nz-form-item>
         <nz-form-label [nzSm]="6" [nzXs]="24" nzFor="phoneNumber" nzRequired
-          >Phone Number</nz-form-label
+          >username</nz-form-label
         >
         <nz-form-control
           [nzSm]="14"
@@ -85,37 +89,25 @@
                 <nz-option nzLabel="+87" nzValue="+87"></nz-option>
               </nz-select>
             </ng-template>
-            <input formControlName="phoneNumber" id="'phoneNumber'" nz-input />
+            <input
+              formControlName="username"
+              id="'username'"
+              nz-input
+              autocomplete="off"
+            />
           </nz-input-group>
         </nz-form-control>
       </nz-form-item>
       <nz-form-item>
-        <nz-form-label
-          [nzSm]="6"
-          [nzXs]="24"
-          nzFor="captcha"
-          nzRequired
-          nzTooltipTitle="Please click 'Get captcha'"
-          [nzTooltipIcon]="captchaTooltipIcon"
-        >
-          Code
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzFor="password" nzRequired>
+          password
         </nz-form-label>
         <nz-form-control
           [nzSm]="14"
           [nzXs]="24"
-          nzErrorTip="Please input the captcha you got!"
-          nzExtra="We must make sure that your are a human."
+          nzErrorTip="Please input the password!"
         >
-          <div nz-row [nzGutter]="8">
-            <div nz-col [nzSpan]="18">
-              <input nz-input formControlName="captcha" id="captcha" />
-            </div>
-            <div nz-col [nzSpan]="6">
-              <button nz-button (click)="getCaptcha($event)">
-                code
-              </button>
-            </div>
-          </div>
+          <input nz-input formControlName="password" id="password" />
         </nz-form-control>
       </nz-form-item>
       <nz-form-item nz-row class="register-area">

@@ -6,6 +6,7 @@ export class TokenService {
     constructor() {}
 
     setToken(token: string) {
+        localStorage.setItem('angular_app_token', token);
         this.token = token
     }
 
@@ -14,6 +15,8 @@ export class TokenService {
     }
 
     getToken() {
-        return this.token
+        if (this.token) return this.token
+        const tokrn = localStorage.getItem('angular_app_token');
+        return tokrn || ''
     }
 }
