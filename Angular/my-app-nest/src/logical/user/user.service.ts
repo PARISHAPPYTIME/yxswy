@@ -1,28 +1,32 @@
 import { Injectable } from '@nestjs/common';
-import * as Sequelize from 'sequelize';
-import sequelize from '../../database/sequelize';
+// import * as Sequelize from 'sequelize';
+// import sequelize from '../../database/sequelize';
 import { makeSalt, encryptPassword } from '../../utils/cryptogram';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository, getManager } from 'typeorm';
+import { UserEntity } from '../../entities/user.entity';
 
 @Injectable()
 export class UserService {
+  constructor(
+    @InjectRepository(UserEntity)
+    private userRepository: Repository<UserEntity>,
+  ) {}
   async findOne(username: string): Promise<any | undefined> {
     const sql = `
       SELECT
-        user_id userId, account_name username, real_name realName, passwd password,
+        id userId, account_name username, real_name realName, passwd password,
         passwd_salt salt, mobile, role
       FROM
-        admin_user
+        user_entity
       WHERE
         account_name = '${username}'
     `;
     try {
-      const res = await sequelize.query(sql, {
-        type: Sequelize.QueryTypes.SELECT, // 查询方式
-        raw: true, // 是否使用数组组装的方式展示结果
-        logging: false, // 是否将 SQL 语句打印到控制台，默认为 true
-      });
+      const res = await getManager().query(sql);
       return res[0];
     } catch (error) {
+      console.log(error);
       return void 0;
     }
   }
@@ -44,19 +48,21 @@ export class UserService {
     }
     const salt = makeSalt(); // 制作密钥
     const hashPwd = encryptPassword(password, salt); // 加密密码
-    const registerSQL = `
-      INSERT INTO admin_user
-        (account_name, real_name, passwd, passwd_salt, mobile, user_status, role, create_by)
+    const sql = `
+      INSERT INTO user_entity
+        (account_name, real_name, passwd, passwd_salt, mobile, user_status, role)
       VALUES
-        ('${accountName}', '${realName}', '${hashPwd}', '${salt}', '${mobile}', 1, 3, 0)
+        ('${accountName}', '${realName}', '${hashPwd}', '${salt}', '${mobile}', 1, 3)
     `;
     try {
-      await sequelize.query(registerSQL, { logging: false });
+      const res = await getManager().query(sql);
+      console.log(res);
       return {
         code: 200,
         msg: 'Success',
       };
     } catch (error) {
+      console.log(error);
       return {
         code: 503,
         msg: `Service error: ${error}`,

@@ -39,7 +39,7 @@ export class AppComponent {
 
     this.validateForm = this.fb.group({
       phoneNumberPrefix: ['+86'],
-      username: ['yxswy', [Validators.required]],
+      username: ['18267094443', [Validators.required]],
       password: ['123456', [Validators.required]],
       agree: [true]
     });
