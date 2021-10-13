@@ -62,11 +62,9 @@
   [nzMaskStyle]="{ 'background-color': 'rgba(0, 0, 0, 0.8)' }"
   nzTitle="Sorry, you need to log in again"
   nzCentered
-  (nzOnCancel)="handleCancelMiddle()"
-  (nzOnOk)="handleOkMiddle()"
 >
   <ng-container *nzModalContent>
-    <form nz-form (ngSubmit)="submitForm()">
+    <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
       <nz-form-item>
         <nz-form-label [nzSm]="6" [nzXs]="24" nzFor="phoneNumber" nzRequired
           >Phone Number</nz-form-label
@@ -100,7 +98,7 @@
           nzTooltipTitle="Please click 'Get captcha'"
           [nzTooltipIcon]="captchaTooltipIcon"
         >
-          Captcha
+          Code
         </nz-form-label>
         <nz-form-control
           [nzSm]="14"
@@ -109,12 +107,12 @@
           nzExtra="We must make sure that your are a human."
         >
           <div nz-row [nzGutter]="8">
-            <div nz-col [nzSpan]="12">
+            <div nz-col [nzSpan]="18">
               <input nz-input formControlName="captcha" id="captcha" />
             </div>
-            <div nz-col [nzSpan]="12">
+            <div nz-col [nzSpan]="6">
               <button nz-button (click)="getCaptcha($event)">
-                Get captcha
+                code
               </button>
             </div>
           </div>
@@ -137,4 +135,5 @@
       </nz-form-item>
     </form>
   </ng-container>
+  <div *nzModalFooter></div>
 </nz-modal>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { HttpService } from '../utils/http.service';
 import { TokenService } from '../utils/token.service';
 
@@ -36,20 +36,20 @@ export class AppComponent {
     }
 
     this.validateForm = this.fb.group({
-      email: [null, [Validators.email, Validators.required]],
-      password: [null, [Validators.required]],
-      checkPassword: [null, [Validators.required, this.confirmationValidator]],
-      nickname: [null, [Validators.required]],
+      // email: [null, [Validators.email, Validators.required]],
+      // password: [null, [Validators.required]],
+      // checkPassword: [null, [Validators.required, this.confirmationValidator]],
+      // nickname: [null, [Validators.required]],
       phoneNumberPrefix: ['+86'],
       phoneNumber: [null, [Validators.required]],
-      website: [null, [Validators.required]],
+      // website: [null, [Validators.required]],
       captcha: [null, [Validators.required]],
       agree: [false]
     });
 
-    this.http.get('https://v1.hitokoto.cn/', {}, (data: any) => {
-      this.hitokoto = data.hitokoto
-    });
+    // this.http.get('https://v1.hitokoto.cn/', {}, (data: any) => {
+    //   this.hitokoto = data.hitokoto
+    // });
   }
 
   confirmationValidator = (control: FormControl): { [s: string]: boolean } => {
