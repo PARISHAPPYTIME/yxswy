@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpService } from '../utils/http.service';
 import { TokenService } from '../utils/token.service';
+import { ActivatedRoute } from '@angular/router'
 
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { NzFormTooltipIcon } from 'ng-zorro-antd/form';
@@ -14,7 +15,8 @@ export class AppComponent {
   constructor(
     private http: HttpService,
     private token: TokenService,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private router: ActivatedRoute
   ) {
     this.init();
   }
@@ -75,5 +77,9 @@ export class AppComponent {
 
   showModalMiddle(): void {
     this.isVisibleMiddle = true;
+  }
+
+  githubLogin() {
+    window.location.href = `https://github.com/login/oauth/authorize?client_id=4becd600482e091af2b4&redirect_uri=${ encodeURI('http://localhost:4200/welcome') }&scope=user&state=1`
   }
 }
