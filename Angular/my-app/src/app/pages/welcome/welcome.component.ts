@@ -1,7 +1,7 @@
 import { HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from '../../../utils/http.service';
-import { TokenService } from '../../../utils/token.service';
+import { UserService } from '../../../utils/user.service';
 
 @Component({
   selector: 'app-welcome',
@@ -15,7 +15,7 @@ export class WelcomeComponent implements OnInit {
   content: string = '';
   content2: any = '';
 
-  constructor(private http: HttpService, private token: TokenService) {}
+  constructor(private http: HttpService, private user: UserService) {}
 
   ngOnInit() {
     this.http.get('/synchronous', {}, (res: any) => {
@@ -35,7 +35,7 @@ export class WelcomeComponent implements OnInit {
         {
           headers: new HttpHeaders({
             'Content-Type': 'application/json',
-            Authorization: 'bearer ' + this.token.getToken(),
+            Authorization: 'bearer ' + this.user.getToken(),
           })
         }
       )

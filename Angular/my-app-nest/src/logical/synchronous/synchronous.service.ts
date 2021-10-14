@@ -23,13 +23,17 @@ export class SynchronousService {
       return {
         code: 200,
         message: 'success',
-        data: res[0],
+        data: {
+          content: res[0] || '',
+        },
       };
     } catch (error) {
       return {
         code: 200,
         message: 'success',
-        data: void 0,
+        data: {
+          content: '',
+        },
       };
     }
   }

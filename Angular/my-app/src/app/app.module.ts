@@ -21,7 +21,7 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox'
 
 import { HttpService } from '../utils/http.service';
-import { TokenService } from '../utils/token.service';
+import { UserService } from '../utils/user.service';
 
 import { FormBuilder, FormControl, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 
@@ -50,7 +50,7 @@ registerLocaleData(zh);
   ],
   providers: [
     { provide: NZ_I18N, useValue: zh_CN },
-    HttpService, TokenService,
+    HttpService, UserService,
     FormBuilder, FormControl
   ],
   bootstrap: [AppComponent]
