@@ -38,7 +38,6 @@ export class AppComponent {
 
   init() {
     const token = this.user.getToken();
-    // const userInfo = this.user.getUserInfo();
     if (!token) {
       this.showModalMiddle();
     }

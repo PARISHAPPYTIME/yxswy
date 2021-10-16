@@ -19,11 +19,11 @@
       nzMode="inline"
       [nzInlineCollapsed]="isCollapsed"
     >
-      <li nz-menu-item nzSelected>
+      <li nz-menu-item nzSelected [routerLink]="['/welcome']">
         <i nz-icon nzType="dashboard"></i>
         <span>Welcome</span>
       </li>
-      <li nz-menu-item>
+      <li nz-menu-item [routerLink]="['/menu']">
         <i nz-icon nzType="dashboard"></i>
         <span>Monitor</span>
       </li>
